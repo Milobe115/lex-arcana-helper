@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two');
+
+#peritiae{
+    border-spacing: 30px;
+    font-size:16px;
+}
+
+#peritiae td {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.t_peritia{
+    background-color:deeppink;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+.t_virtus{
+    background-color:orange;
+    border:2px black solid
+}
+.t_inter{
+    background-color:aquamarine;
+    border:2px black solid;
+    border-radius: 100%;
+}
+.t_province{
+    background-color: lime;
+}
+.t_bonus{
+    background-color: orchid;
+    border: 1px black solid;
+    border-radius: 100%;
+    width:50px !important;
+    height: 50px !important;
+}
+.t_wide{
+    width: 75px !important;
+}
+
+#select_province{
+    width: 80%;
+    font-size:24px;
+}
