@@ -116,27 +116,21 @@ export class AppComponent {
         switch (variableName){
             case 'sensibilitas':
                 this.sensibilitas = +event.target.value;
-                console.log('S ' + this.sensibilitas);
                 break;
             case 'ingenium':
                 this.ingenium = +event.target.value;
-                console.log('I ' + this.ingenium);
                 break;
             case 'ratio':
                 this.ratio = +event.target.value;
-                console.log('R ' + this.ratio);
                 break;
             case 'auctoritas':
                 this.auctoritas = +event.target.value;
-                console.log('A ' + this.auctoritas);
                 break;
             case 'vigor':
                 this.vigor = +event.target.value;
-                console.log('V ' + this.vigor);
                 break;
             case 'coordinatio':
                 this.coordinatio = +event.target.value;
-                console.log('C ' + this.coordinatio);
                 break;
         }
         this.recalculateAllPeritiae();

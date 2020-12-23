@@ -1,89 +1,4 @@
 <style>
-    :host {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        font-size: 14px;
-        color: #333;
-        box-sizing: border-box;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin: 8px 0;
-    }
-
-    p {
-        margin: 0;
-    }
-
-    .spacer {
-        flex: 1;
-    }
-
-    .toolbar {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        background-color: #1a472a;
-        color: white;
-        font-weight: 600;
-        font-family:"Lobster Two", sans-serif;
-        font-size: 24px;
-    }
-
-    .toolbar img {
-        margin: 0 16px;
-    }
-
-    .toolbar #twitter-logo {
-        height: 40px;
-        margin: 0 16px;
-    }
-
-    .toolbar #twitter-logo:hover {
-        opacity: 0.8;
-    }
-
-    .content {
-        display: flex;
-        margin: 82px auto 32px;
-        padding: 0 16px;
-        max-width: 960px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    a,
-    a:visited,
-    a:hover {
-        color: #1976d2;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: #125699;
-    }
-
-    footer {
-        margin-top: 8px;
-        display: flex;
-        align-items: center;
-        line-height: 20px;
-    }
-
-    footer a {
-        display: flex;
-        align-items: center;
-    }
 
 </style>
 
@@ -106,62 +21,62 @@
 
 <div class="content" role="main">
 
-    <table id="peritiae">
+    <table id="snowflake">
         <tr>
             <td colspan="4"></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('SN' ,$event)"/></td>
-            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" (keyup)="onVirtusChange('sensibilitas' ,$event)"/></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('SM' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="sensibilitasNatura" (blur)="onInterChange('SN' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" [(ngModel)]="sensibilitas" (blur)="onVirtusChange('sensibilitas' ,$event)"/><div class="t_virtus_label">Sensibilitas</div></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="sensibilitasMagia" (blur)="onInterChange('SM' ,$event)"/></td>
             <td colspan="4"></td>
         </tr>
         <tr>
             <td colspan="2"></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('CN' ,$event)"/></td>
-            <td colspan="2" class="t_peritia">{{this.natura}}</td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="coordinatioNatura" (blur)="onInterChange('CN' ,$event)"/></td>
+            <td colspan="2" class="t_peritia">{{this.natura}}<div class="t_peritia_label">De Natura</div></td>
             <td colspan="2"></td>
-            <td colspan="2" class="t_peritia">{{this.magia}}</td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('IM' ,$event)"/></td>
-            <td></td>
+            <td colspan="2" class="t_peritia">{{this.magia}}<div class="t_peritia_label">De Magia</div></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="ingeniumMagia" (blur)="onInterChange('IM' ,$event)"/></td>
+            <td colspan="2"></td>
         </tr>
         <tr>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('CC' ,$event)"/></td>
-            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" (keyup)="onVirtusChange('coordinatio' ,$event)"/></td>
-            <td colspan="3" class="t_bonus">{{selectedProvince.natura}}</td>
-            <td colspan="3" class="t_bonus">{{selectedProvince.magia}}</td>
-            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" (keyup)="onVirtusChange('ingenium' ,$event)"/></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('IS' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="coordinatioCorpore" (blur)="onInterChange('CC' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" [(ngModel)]="coordinatio" (blur)="onVirtusChange('coordinatio' ,$event)"/><div class="t_virtus_label">Coordinatio</div></td>
+            <td colspan="3" class="t_bonus"><div>{{selectedProvince.natura}}</div></td>
+            <td colspan="3" class="t_bonus"><div>{{selectedProvince.magia}}</div></td>
+            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" [(ngModel)]="ingenium" (blur)="onVirtusChange('ingenium' ,$event)"/><div class="t_virtus_label">Ingenium</div></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="ingeniumScientia" (blur)="onInterChange('IS' ,$event)"/></td>
         </tr>
         <tr>
-            <td colspan="2" class="t_peritia">{{this.corpore}}</td>
-            <td colspan="2" class="t_bonus">{{selectedProvince.corpore}}</td>
-            <td class="t_province" colspan="6"><select id="select_province" (change)="onSelectProvince($event)">
+            <td colspan="2" class="t_peritia">{{this.corpore}}<div class="t_peritia_label">De Corpore</div></td>
+            <td colspan="2" class="t_bonus"><div>{{selectedProvince.corpore}}</div></td>
+            <td colspan="6" class="t_province"><select id="select_province" (change)="onSelectProvince($event)">
                 <option *ngFor="let province of provinces" [ngValue]="province">{{province.name}}</option>
             </select></td>
-            <td colspan="2" class="t_bonus">{{selectedProvince.scientia}}</td>
-            <td colspan="2" class="t_peritia">{{this.scientia}}</td>
+            <td colspan="2" class="t_bonus"><div>{{selectedProvince.scientia}}</div></td>
+            <td colspan="2" class="t_peritia">{{this.scientia}}<div class="t_peritia_label">De Scientia</div></td>
         </tr>
         <tr>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('VC' ,$event)"/></td>
-            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" (keyup)="onVirtusChange('vigor' ,$event)"/></td>
-            <td colspan="3" class="t_bonus">{{selectedProvince.bello}}</td>
-            <td colspan="3" class="t_bonus">{{selectedProvince.societate}}</td>
-            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" (keyup)="onVirtusChange('ratio' ,$event)"/></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('RSc' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="vigorCorpore" (blur)="onInterChange('VC' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" [(ngModel)]="vigor" (blur)="onVirtusChange('vigor' ,$event)"/><div class="t_virtus_label">Vigor</div></td>
+            <td colspan="3" class="t_bonus"><div>{{selectedProvince.bello}}</div></td>
+            <td colspan="3" class="t_bonus"><div>{{selectedProvince.societate}}</div></td>
+            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" [(ngModel)]="ratio" (blur)="onVirtusChange('ratio' ,$event)"/><div class="t_virtus_label">Ratio</div></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="ratioScientia" (blur)="onInterChange('RSc' ,$event)"/></td>
         </tr>
         <tr>
             <td colspan="2"></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('VB' ,$event)"/></td>
-            <td colspan="2" class="t_peritia">{{this.bello}}</td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="vigorBello" (blur)="onInterChange('VB' ,$event)"/></td>
+            <td colspan="2" class="t_peritia">{{this.bello}}<div class="t_peritia_label">De Bello</div></td>
             <td colspan="2"></td>
-            <td colspan="2" class="t_peritia">{{this.societate}}</td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('RSo' ,$event)"/></td>
+            <td colspan="2" class="t_peritia">{{this.societate}}<div class="t_peritia_label">De Societate</div></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="ratioSocietate" (blur)="onInterChange('RSo' ,$event)"/></td>
             <td colspan="2"></td>
         </tr>
         <tr>
             <td colspan="4"></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('AB' ,$event)"/></td>
-            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" (keyup)="onVirtusChange('auctoritas' ,$event)"/></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('ASo' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="auctoritasBello" (blur)="onInterChange('AB' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" [(ngModel)]="auctoritas" (blur)="onVirtusChange('auctoritas' ,$event)"/><div class="t_virtus_label">Auctoritas</div></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="auctoritasSocietate" (blur)="onInterChange('ASo' ,$event)"/></td>
             <td colspan="4"></td>
         </tr>
     </table>

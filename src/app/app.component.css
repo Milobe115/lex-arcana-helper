@@ -1,41 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two');
 @import url('https://fonts.googleapis.com/css2?family=Caveat');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text');
 
-#peritiae{
+/* TODO : SORT THIS ZONE */
+
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 8px 0;
+}
+
+p {
+    margin: 0;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: darkred;
+    color: white;
+    font-weight: 600;
+    font-family:"Crimson Text", serif;
+    font-size: 24px;
+}
+
+.toolbar img {
+    margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover {
+    opacity: 0.8;
+}
+
+.content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+}
+
+a,
+a:visited,
+a:hover {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #125699;
+}
+
+footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+}
+
+/* THIS ZONE SORTED. YEET! */
+
+
+#snowflake{
     border-spacing: 30px;
     font-size:24px;
     font-family: "Caveat", sans-serif;
 }
 
-#peritiae td {
+#snowflake td {
     width: 75px;
     height: 75px;
     text-align: center;
 }
 
 .t_peritia{
-    background-color:pink;
-    border: 2px black solid;
+    border: 2px darkred solid;
     border-radius: 20px;
 }
 .t_virtus{
-    background-color:orange;
-    border:2px black solid
+    border:2px darkgreen solid;
+    padding-bottom: 0;
 }
 .t_inter{
-    background-color:aquamarine;
-    border:2px black solid;
+    border:2px darkblue solid;
     border-radius: 100%;
 }
 .t_province{
-    background-color: lime;
+
 }
-.t_bonus{
-    background-color: orchid;
-    border: 1px black solid;
+.t_bonus div{
+    border: 2px darkmagenta solid;
     border-radius: 100%;
-    width:50px !important;
-    height: 50px !important;
+    line-height: 75px;
+    width: 75px !important;
+    height: 75px !important;
+    margin:auto;
 }
 .t_wide{
     width: 75px !important;
@@ -45,6 +135,9 @@
     font-family: "Caveat", sans-serif;
     width: 80%;
     font-size:24px;
+    color:darkmagenta;
+    border:2px darkmagenta solid;
+    background: #ffffff00;
 }
 
 .i_stat{
@@ -54,11 +147,23 @@
     font-size: 30px;
     -webkit-appearance: none;
     text-align: center;
-    border: #1a472a 1px solid;
+    border: 0;
+    color: darkblue;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.t_virtus_label{
+    font-family: "Crimson Text", serif;
+    font-size: 14px;
+    padding-top:10px;
+}
+.t_peritia_label{
+    font-family: "Crimson Text", serif;
+    font-size: 14px;
+    padding-top:10px;
 }
