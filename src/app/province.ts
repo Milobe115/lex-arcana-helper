@@ -10,7 +10,7 @@ export interface Province{
 }
 
 export const PROVINCES: Province[] = [
-  {id: 0, name: '', bello: 0, corpore: 0, magia: 0, natura: 0, scientia: 0, societate: 0},
+  {id: 0, name: 'Select Province', bello: 0, corpore: 0, magia: 0, natura: 0, scientia: 0, societate: 0},
   {id: 1, name: 'Roma Urbe', bello: 1, corpore: 2, magia: 3, natura: 0, scientia: 6, societate: 6},
   {id: 2, name: 'Achaia', bello: 1, corpore: 3, magia: 3, natura: 1, scientia: 5, societate: 5},
   {id: 3, name: 'Aegyptus', bello: 2, corpore: 2, magia: 5, natura: 1, scientia: 5, societate: 3},

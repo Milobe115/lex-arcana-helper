@@ -109,59 +109,59 @@
     <table id="peritiae">
         <tr>
             <td colspan="4"></td>
-            <td colspan="2" class="t_inter">C</td>
-            <td colspan="2" class="t_virtus"><input/> </td>
-            <td colspan="2" class="t_inter">E</td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('SN' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" (keyup)="onVirtusChange('sensibilitas' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('SM' ,$event)"/></td>
             <td colspan="4"></td>
         </tr>
         <tr>
             <td colspan="2"></td>
-            <td colspan="2" class="t_inter">B</td>
-            <td colspan="2" class="t_peritia">C</td>
-            <td colspan="2">D</td>
-            <td colspan="2" class="t_peritia">E</td>
-            <td colspan="2" class="t_inter">F</td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('CN' ,$event)"/></td>
+            <td colspan="2" class="t_peritia">{{this.natura}}</td>
+            <td colspan="2"></td>
+            <td colspan="2" class="t_peritia">{{this.magia}}</td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('IM' ,$event)"/></td>
             <td></td>
         </tr>
         <tr>
-            <td colspan="2" class="t_inter">A</td>
-            <td colspan="2" class="t_virtus">B</td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('CC' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" (keyup)="onVirtusChange('coordinatio' ,$event)"/></td>
             <td colspan="3" class="t_bonus">{{selectedProvince.natura}}</td>
             <td colspan="3" class="t_bonus">{{selectedProvince.magia}}</td>
-            <td colspan="2" class="t_virtus">F</td>
-            <td colspan="2" class="t_inter">G</td>
+            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" (keyup)="onVirtusChange('ingenium' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('IS' ,$event)"/></td>
         </tr>
         <tr>
-            <td colspan="2" class="t_peritia">A</td>
+            <td colspan="2" class="t_peritia">{{this.corpore}}</td>
             <td colspan="2" class="t_bonus">{{selectedProvince.corpore}}</td>
             <td class="t_province" colspan="6"><select id="select_province" (change)="onSelectProvince($event)">
                 <option *ngFor="let province of provinces" [ngValue]="province">{{province.name}}</option>
             </select></td>
             <td colspan="2" class="t_bonus">{{selectedProvince.scientia}}</td>
-            <td colspan="2" class="t_peritia">G</td>
+            <td colspan="2" class="t_peritia">{{this.scientia}}</td>
         </tr>
         <tr>
-            <td colspan="2" class="t_inter">A</td>
-            <td colspan="2" class="t_virtus">B</td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('VC' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" (keyup)="onVirtusChange('vigor' ,$event)"/></td>
             <td colspan="3" class="t_bonus">{{selectedProvince.bello}}</td>
             <td colspan="3" class="t_bonus">{{selectedProvince.societate}}</td>
-            <td colspan="2" class="t_virtus">F</td>
-            <td colspan="2" class="t_inter">G</td>
+            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" (keyup)="onVirtusChange('ratio' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('RSc' ,$event)"/></td>
         </tr>
         <tr>
             <td colspan="2"></td>
-            <td colspan="2" class="t_inter">B</td>
-            <td colspan="2" class="t_peritia">C</td>
-            <td colspan="2">D</td>
-            <td colspan="2" class="t_peritia">E</td>
-            <td colspan="2" class="t_inter">F</td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('VB' ,$event)"/></td>
+            <td colspan="2" class="t_peritia">{{this.bello}}</td>
+            <td colspan="2"></td>
+            <td colspan="2" class="t_peritia">{{this.societate}}</td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('RSo' ,$event)"/></td>
             <td colspan="2"></td>
         </tr>
         <tr>
             <td colspan="4"></td>
-            <td colspan="2" class="t_inter">C</td>
-            <td colspan="2" class="t_virtus">D</td>
-            <td colspan="2" class="t_inter">E</td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('AB' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" (keyup)="onVirtusChange('auctoritas' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input type="number" class="i_stat" (keyup)="onInterChange('ASo' ,$event)"/></td>
             <td colspan="4"></td>
         </tr>
     </table>

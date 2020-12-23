@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two');
+@import url('https://fonts.googleapis.com/css2?family=Caveat');
 
 #peritiae{
     border-spacing: 30px;
-    font-size:16px;
+    font-size:24px;
+    font-family: "Caveat", sans-serif;
 }
 
 #peritiae td {
@@ -12,7 +14,7 @@
 }
 
 .t_peritia{
-    background-color:deeppink;
+    background-color:pink;
     border: 2px black solid;
     border-radius: 20px;
 }
@@ -40,6 +42,23 @@
 }
 
 #select_province{
+    font-family: "Caveat", sans-serif;
     width: 80%;
     font-size:24px;
+}
+
+.i_stat{
+    font-family: "Caveat", sans-serif;
+    width: 35px;
+    height:35px;
+    font-size: 30px;
+    -webkit-appearance: none;
+    text-align: center;
+    border: #1a472a 1px solid;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
