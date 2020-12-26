@@ -23,27 +23,27 @@
     <table id="snowflake">
         <tr>
             <td colspan="4"></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="sensibilitasNatura" (blur)="onInterChange('SN' ,$event)"/></td>
-            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" [(ngModel)]="sensibilitas" (blur)="onVirtusChange('sensibilitas' ,$event)"/><div class="t_virtus_label">Sensibilitas</div></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="sensibilitasMagia" (blur)="onInterChange('SM' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="sensibilitasNatura" (blur)="onInterChange('SN' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="sensibilitas" (blur)="onVirtusChange('sensibilitas' ,$event)"/><div class="t_virtus_label">Sensibilitas</div></td>
+            <td colspan="2" class="t_inter"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="sensibilitasMagia" (blur)="onInterChange('SM' ,$event)"/></td>
             <td colspan="4"></td>
         </tr>
         <tr>
             <td colspan="2"></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="coordinatioNatura" (blur)="onInterChange('CN' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="coordinatioNatura" (blur)="onInterChange('CN' ,$event)"/></td>
             <td colspan="2" class="t_peritia">{{this.natura}}<div class="t_peritia_label">De Natura</div></td>
             <td colspan="2"></td>
             <td colspan="2" class="t_peritia">{{this.magia}}<div class="t_peritia_label">De Magia</div></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="ingeniumMagia" (blur)="onInterChange('IM' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="ingeniumMagia" (blur)="onInterChange('IM' ,$event)"/></td>
             <td colspan="2"></td>
         </tr>
         <tr>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="coordinatioCorpore" (blur)="onInterChange('CC' ,$event)"/></td>
-            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" [(ngModel)]="coordinatio" (blur)="onVirtusChange('coordinatio' ,$event)"/><div class="t_virtus_label">Coordinatio</div></td>
+            <td colspan="2" class="t_inter"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="coordinatioCorpore" (blur)="onInterChange('CC' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="coordinatio" (blur)="onVirtusChange('coordinatio' ,$event)"/><div class="t_virtus_label">Coordinatio</div></td>
             <td colspan="3" class="t_bonus"><div>{{selectedProvince.natura}}</div></td>
             <td colspan="3" class="t_bonus"><div>{{selectedProvince.magia}}</div></td>
-            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" [(ngModel)]="ingenium" (blur)="onVirtusChange('ingenium' ,$event)"/><div class="t_virtus_label">Ingenium</div></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="ingeniumScientia" (blur)="onInterChange('IS' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="ingenium" (blur)="onVirtusChange('ingenium' ,$event)"/><div class="t_virtus_label">Ingenium</div></td>
+            <td colspan="2" class="t_inter"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="ingeniumScientia" (blur)="onInterChange('IS' ,$event)"/></td>
         </tr>
         <tr>
             <td colspan="2" class="t_peritia">{{this.corpore}}<div class="t_peritia_label">De Corpore</div></td>
@@ -55,27 +55,27 @@
             <td colspan="2" class="t_peritia">{{this.scientia}}<div class="t_peritia_label">De Scientia</div></td>
         </tr>
         <tr>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="vigorCorpore" (blur)="onInterChange('VC' ,$event)"/></td>
-            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" [(ngModel)]="vigor" (blur)="onVirtusChange('vigor' ,$event)"/><div class="t_virtus_label">Vigor</div></td>
+            <td colspan="2" class="t_inter"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="vigorCorpore" (blur)="onInterChange('VC' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="vigor" (blur)="onVirtusChange('vigor' ,$event)"/><div class="t_virtus_label">Vigor</div></td>
             <td colspan="3" class="t_bonus"><div>{{selectedProvince.bello}}</div></td>
             <td colspan="3" class="t_bonus"><div>{{selectedProvince.societate}}</div></td>
-            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" [(ngModel)]="ratio" (blur)="onVirtusChange('ratio' ,$event)"/><div class="t_virtus_label">Ratio</div></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="ratioScientia" (blur)="onInterChange('RSc' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="ratio" (blur)="onVirtusChange('ratio' ,$event)"/><div class="t_virtus_label">Ratio</div></td>
+            <td colspan="2" class="t_inter"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="ratioScientia" (blur)="onInterChange('RSc' ,$event)"/></td>
         </tr>
         <tr>
             <td colspan="2"></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="vigorBello" (blur)="onInterChange('VB' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="vigorBello" (blur)="onInterChange('VB' ,$event)"/></td>
             <td colspan="2" class="t_peritia">{{this.bello}}<div class="t_peritia_label">De Bello</div></td>
             <td colspan="2"></td>
             <td colspan="2" class="t_peritia">{{this.societate}}<div class="t_peritia_label">De Societate</div></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="ratioSocietate" (blur)="onInterChange('RSo' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="ratioSocietate" (blur)="onInterChange('RSo' ,$event)"/></td>
             <td colspan="2"></td>
         </tr>
         <tr>
             <td colspan="4"></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="auctoritasBello" (blur)="onInterChange('AB' ,$event)"/></td>
-            <td colspan="2" class="t_virtus"><input type="number" class="i_stat" [(ngModel)]="auctoritas" (blur)="onVirtusChange('auctoritas' ,$event)"/><div class="t_virtus_label">Auctoritas</div></td>
-            <td colspan="2" class="t_inter"><input type="number" class="i_stat" [(ngModel)]="auctoritasSocietate" (blur)="onInterChange('ASo' ,$event)"/></td>
+            <td colspan="2" class="t_inter"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="auctoritasBello" (blur)="onInterChange('AB' ,$event)"/></td>
+            <td colspan="2" class="t_virtus"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="auctoritas" (blur)="onVirtusChange('auctoritas' ,$event)"/><div class="t_virtus_label">Auctoritas</div></td>
+            <td colspan="2" class="t_inter"><input appDisableArrows type="number" class="i_stat" [(ngModel)]="auctoritasSocietate" (blur)="onInterChange('ASo' ,$event)"/></td>
             <td colspan="4"></td>
         </tr>
     </table>
