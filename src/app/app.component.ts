@@ -10,6 +10,9 @@ import {Province, PROVINCES} from './province';
 
 export class AppComponent {
 
+    // Logic variables
+    isDisabled = false;
+
     // Virtutes
     sensibilitas = 0;
     ingenium = 0;
@@ -54,6 +57,7 @@ export class AppComponent {
     }
 
     onSelectProvince(event: any): void{
+        this.isDisabled = true;
         this.selectedProvince = this.provinces.find((value => value.name === event.target.value));
         this.recalculateAllPeritiae();
     }

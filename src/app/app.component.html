@@ -49,6 +49,8 @@
             <td colspan="2" class="t_peritia">{{this.corpore}}<div class="t_peritia_label">De Corpore</div></td>
             <td colspan="2" class="t_bonus"><div>{{selectedProvince.corpore}}</div></td>
             <td colspan="6" class="t_province"><select id="select_province" (change)="onSelectProvince($event)">
+                <option *ngIf="isDisabled" disabled>Select Province</option>
+                <option *ngIf="!(isDisabled)">Select Province</option>
                 <option *ngFor="let province of provinces" [ngValue]="province">{{province.name}}</option>
             </select></td>
             <td colspan="2" class="t_bonus"><div>{{selectedProvince.scientia}}</div></td>
