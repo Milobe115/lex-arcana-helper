@@ -65,8 +65,9 @@
       "as-needed"
     ],
     "quotemark": [
-      true,
-      "single"
+      false,
+      "single",
+      "double"
     ],
     "semicolon": {
       "options": [

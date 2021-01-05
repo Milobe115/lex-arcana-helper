@@ -1,0 +1,89 @@
+#snowflake{
+    background: url("../../assets/lahbg.png");
+    border-spacing: 30px;
+    font-size:24px;
+    font-family: "Caveat", sans-serif;
+}
+
+#snowflake td {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.t_peritia{
+    border: 2px darkred solid;
+    border-radius: 20px;
+    background: white;
+}
+.t_virtus{
+    border:2px darkgreen solid;
+    padding-bottom: 0;
+    background: white;
+}
+.t_inter{
+    border:2px darkblue solid;
+    border-radius: 100%;
+    background: white;
+}
+.t_province{
+
+}
+.t_bonus div{
+    border: 2px darkmagenta solid;
+    border-radius: 100%;
+    line-height: 75px;
+    width: 75px !important;
+    height: 75px !important;
+    background: white;
+}
+.t_left{
+    margin-right: 0;
+    margin-left: auto;
+}
+.t_right{
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.t_wide{
+    width: 75px !important;
+}
+
+#select_province{
+    font-family: "Caveat", sans-serif;
+    width: 80%;
+    font-size:24px;
+    color:darkmagenta;
+    border:2px darkmagenta solid;
+    background: #ffffffff;
+}
+
+.i_stat{
+    font-family: "Caveat", sans-serif;
+    width: 35px;
+    height:35px;
+    font-size: 30px;
+    -webkit-appearance: none;
+    text-align: center;
+    border: 0;
+    color: darkblue;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+label{
+    font-family: "Crimson Text", serif;
+    font-size: 14px;
+    padding:5px;
+    width:75px !important;
+}
+.t_peritia_label{
+    font-family: "Crimson Text", serif;
+    font-size: 14px;
+    padding-top:5px;
+}
