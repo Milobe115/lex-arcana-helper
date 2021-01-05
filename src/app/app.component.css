@@ -12,19 +12,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 8px 0;
-}
-
-p {
-    margin: 0;
-}
-
 .spacer {
     flex: 1;
 }
@@ -91,8 +78,8 @@ footer a {
 
 /* THIS ZONE SORTED. YEET! */
 
-
 #snowflake{
+    background: url("../assets/lahbg.png");
     border-spacing: 30px;
     font-size:24px;
     font-family: "Caveat", sans-serif;
@@ -107,14 +94,17 @@ footer a {
 .t_peritia{
     border: 2px darkred solid;
     border-radius: 20px;
+    background: white;
 }
 .t_virtus{
     border:2px darkgreen solid;
     padding-bottom: 0;
+    background: white;
 }
 .t_inter{
     border:2px darkblue solid;
     border-radius: 100%;
+    background: white;
 }
 .t_province{
 
@@ -125,8 +115,17 @@ footer a {
     line-height: 75px;
     width: 75px !important;
     height: 75px !important;
-    margin:auto;
+    background: white;
 }
+.t_left{
+    margin-right: 0;
+    margin-left: auto;
+}
+.t_right{
+    margin-left: 0;
+    margin-right: auto;
+}
+
 .t_wide{
     width: 75px !important;
 }
@@ -137,7 +136,7 @@ footer a {
     font-size:24px;
     color:darkmagenta;
     border:2px darkmagenta solid;
-    background: #ffffff00;
+    background: #ffffffff;
 }
 
 .i_stat{

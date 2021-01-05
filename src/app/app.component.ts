@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Province, PROVINCES} from './province';
+import {DEFAULT_PROVINCE, Province, PROVINCES} from './province';
 
 // noinspection DuplicatedCode
 @Component({
@@ -44,7 +44,7 @@ export class AppComponent {
     societate = 0;
 
     provinces: Province[] = PROVINCES;
-    selectedProvince: Province = this.provinces[0];
+    selectedProvince: Province = DEFAULT_PROVINCE;
     title = 'lex-arcana';
 
     recalculateAllPeritiae(): void{
