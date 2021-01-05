@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { DisableArrowsDirective } from './disable-arrows.directive';
 import { SnowflakeComponent } from './snowflake/snowflake.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         DisableArrowsDirective,
-        SnowflakeComponent
+        SnowflakeComponent,
+        HeaderComponent
     ],
     imports: [
         BrowserModule,
