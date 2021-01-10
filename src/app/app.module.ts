@@ -7,6 +7,7 @@ import { DisableArrowsDirective } from './disable-arrows.directive';
 import { SnowflakeComponent } from './snowflake/snowflake.component';
 import { HeaderComponent } from './header/header.component';
 import { AgeSelectorComponent } from './age-selector/age-selector.component';
+import { HealthPietasComponent } from './health-pietas/health-pietas.component';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { AgeSelectorComponent } from './age-selector/age-selector.component';
         DisableArrowsDirective,
         SnowflakeComponent,
         HeaderComponent,
-        AgeSelectorComponent
+        AgeSelectorComponent,
+        HealthPietasComponent
     ],
     imports: [
         BrowserModule,

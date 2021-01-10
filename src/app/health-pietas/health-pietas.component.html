@@ -1,0 +1,24 @@
+<div id="healthPietas">
+    Health & Pietas
+
+    <select id="select_office" (change)="onOfficeChange($event)">
+        <option *ngIf="isDisabled" disabled>Select Office</option>
+        <option *ngIf="!(isDisabled)">Select Office</option>
+        <option *ngFor="let office of offices" [ngValue]="office">{{office.name}}</option>
+    </select>
+
+    <div id="health">
+        Health - {{(selectedOffice.health < 0) ? selectedOffice.health : "+" + selectedOffice.health }}
+        <p>
+            Final value : {{this.virtus.vigor + this.virtus.coordinatio + selectedOffice.health}}
+        </p>
+    </div>
+
+    <div id="pietas">
+        Pietas - {{(selectedOffice.pietas < 0) ? selectedOffice.pietas : "+" + selectedOffice.pietas }}
+        <p>
+            Final value : {{this.virtus.ratio + this.virtus.sensibilitas + selectedOffice.pietas}}
+        </p>
+    </div>
+
+</div>

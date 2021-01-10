@@ -1,0 +1,30 @@
+#healthPietas{
+    padding:10px;
+    font-family: "Caveat", serif;
+    font-size: 24px;
+    text-align: center;
+    width: 200px;
+    border: 2px solid darkred;
+}
+
+#select_office{
+    margin:10px;
+    font-family: "Caveat", sans-serif;
+    width: 80%;
+    font-size:20px;
+    color:darkmagenta;
+    border:2px darkmagenta solid;
+    background: #ffffffff;
+}
+
+#health{
+    border: 1px solid darkred;
+    width: 180px;
+    margin: 15px auto;
+}
+
+#pietas{
+    border: 1px solid darkred;
+    width: 180px;
+    margin: 15px auto;
+}
