@@ -6,13 +6,15 @@ import {FormsModule} from '@angular/forms';
 import { DisableArrowsDirective } from './disable-arrows.directive';
 import { SnowflakeComponent } from './snowflake/snowflake.component';
 import { HeaderComponent } from './header/header.component';
+import { AgeSelectorComponent } from './age-selector/age-selector.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         DisableArrowsDirective,
         SnowflakeComponent,
-        HeaderComponent
+        HeaderComponent,
+        AgeSelectorComponent
     ],
     imports: [
         BrowserModule,

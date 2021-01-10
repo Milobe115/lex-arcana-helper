@@ -14,10 +14,10 @@
 
 .content {
     display: flex;
+    justify-content: center;
     margin: 82px auto 32px;
     padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
+    max-width: 1500px;
     align-items: center;
 }
 
