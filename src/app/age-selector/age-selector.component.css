@@ -1,0 +1,39 @@
+#ageSelector{
+    background: url("../../assets/lahasbg.png");
+    border-spacing: 30px;
+    font-size:24px;
+    font-family: "Caveat", sans-serif
+}
+
+#ageSelector td {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+#select_age{
+    font-family: "Caveat", sans-serif;
+    width: 80%;
+    font-size:24px;
+    color:darkmagenta;
+    border:2px darkmagenta solid;
+    background: #ffffffff;
+}
+
+.t_bonus{
+    border: 2px darkmagenta solid;
+    border-radius: 100%;
+    background: white;
+}
+
+.t_virtus{
+    border:2px darkgreen solid;
+    padding-bottom: 0;
+    background: white;
+}
+
+.t_virtus_label{
+    font-family: "Crimson Text", serif;
+    font-size: 14px;
+    padding-top:5px;
+}

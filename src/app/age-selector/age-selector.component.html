@@ -1,0 +1,48 @@
+<table id="ageSelector">
+    <tr>
+        <td colspan="2">
+            <label for="select_age"></label>
+            <select id="select_age" (change)="onSelectAge($event)">
+                <option *ngIf="isDisabled" disabled>Select Age</option>
+                <option *ngIf="!(isDisabled)">Select Age</option>
+                <option *ngFor="let age of ages" [ngValue]="age">{{age.desc}}</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td class="t_bonus">{{selectedAge.sensibilitas}}</td>
+        <td class="t_virtus">{{this.virtus.sensibilitas + selectedAge.sensibilitas}}
+            <div class="t_virtus_label">Sensibilitas</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="t_bonus">{{selectedAge.ingenium}}</td>
+        <td class="t_virtus">{{this.virtus.ingenium + selectedAge.ingenium}}
+            <div class="t_virtus_label">Ingenium</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="t_bonus">{{selectedAge.ratio}}</td>
+        <td class="t_virtus">{{this.virtus.ratio + selectedAge.ratio}}
+            <div class="t_virtus_label">Ratio</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="t_bonus">{{selectedAge.auctoritas}}</td>
+        <td class="t_virtus">{{this.virtus.auctoritas + selectedAge.auctoritas}}
+            <div class="t_virtus_label">Auctoritas</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="t_bonus">{{selectedAge.vigor}}</td>
+        <td class="t_virtus">{{this.virtus.vigor + selectedAge.vigor}}
+            <div class="t_virtus_label">Vigor</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="t_bonus">{{selectedAge.coordinatio}}</td>
+        <td class="t_virtus">{{this.virtus.coordinatio + selectedAge.coordinatio}}
+            <div class="t_virtus_label">Coordinatio</div>
+        </td>
+    </tr>
+</table>

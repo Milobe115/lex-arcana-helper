@@ -3,6 +3,7 @@
     border-spacing: 30px;
     font-size:24px;
     font-family: "Caveat", sans-serif;
+    width: 807px;
 }
 
 #snowflake td {
@@ -25,9 +26,6 @@
     border:2px darkblue solid;
     border-radius: 100%;
     background: white;
-}
-.t_province{
-
 }
 .t_bonus div{
     border: 2px darkmagenta solid;
@@ -79,9 +77,14 @@ input::-webkit-inner-spin-button {
 label{
     font-family: "Crimson Text", serif;
     font-size: 14px;
-    padding:5px;
+    padding-top: 5px;
     width:75px !important;
 }
+.t_small_virtus{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .t_peritia_label{
     font-family: "Crimson Text", serif;
     font-size: 14px;

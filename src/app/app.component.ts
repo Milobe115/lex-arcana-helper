@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {DEFAULT_PROVINCE, Province, PROVINCES} from './province';
+import {DEFAULT_PROVINCE, Province, PROVINCES} from './data/province';
 
 // noinspection DuplicatedCode
 @Component({
