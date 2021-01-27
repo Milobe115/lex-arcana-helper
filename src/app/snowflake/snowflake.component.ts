@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {DEFAULT_PROVINCE, Province, PROVINCES} from "../data/province";
 import {Virtus} from "../data/virtus";
-import {SharedVirtusService} from "../shared-virtus.service";
+import {SharedDataService} from "../shared-data.service";
 
 @Component({
     selector: 'app-snowflake',
@@ -41,7 +41,7 @@ export class SnowflakeComponent implements OnInit {
     provinces: Province[] = PROVINCES;
     selectedProvince: Province = DEFAULT_PROVINCE;
 
-    constructor(private sharedVirtusService: SharedVirtusService) {
+    constructor(private sharedDataService: SharedDataService) {
         this.virtus = new Virtus(0, 0, 0, 0, 0, 0);
     }
 
@@ -139,6 +139,6 @@ export class SnowflakeComponent implements OnInit {
                 break;
         }
         this.recalculateAllPeritiae();
-        this.sharedVirtusService.sendData(this.virtus);
+        this.sharedDataService.sendAgeVirtus(this.virtus);
     }
 }

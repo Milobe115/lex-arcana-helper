@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {HealthPietasService} from "../health-pietas.service";
 import {Virtus} from "../data/virtus";
 import {DEFAULT_OFFICE, Office, OFFICES} from "../data/offices";
+import {SharedDataService} from "../shared-data.service";
 
 @Component({
     selector: 'app-health-pietas',
@@ -17,11 +17,11 @@ export class HealthPietasComponent implements OnInit {
     selectedOffice = DEFAULT_OFFICE;
     offices = OFFICES;
 
-    constructor(private healthPietasService: HealthPietasService) {
+    constructor(private sharedDataService: SharedDataService) {
     }
 
     ngOnInit(): void {
-        this.healthPietasService.currentData.subscribe(data => this.virtus = data);
+        this.sharedDataService.currentHPVirtus.subscribe(data => this.virtus = data);
     }
 
     onOfficeChange(event: any): void{

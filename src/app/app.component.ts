@@ -9,6 +9,4 @@ import {DEFAULT_PROVINCE, Province, PROVINCES} from './data/province';
 })
 
 export class AppComponent {
-
-
 }
