@@ -15,10 +15,17 @@
 .content {
     display: flex;
     justify-content: center;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 1500px;
+    margin: 82px 0px 32px;
+    max-width: 100%;
     align-items: center;
+    height: calc(100vh - 114px);
+}
+
+.wrapper{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding: 0 16px;
 }
 
 footer {
@@ -35,6 +42,15 @@ footer a {
 
 .main_spacer{
     width:100px;
+}
+
+.disabled{
+    filter: grayscale(100%);
+}
+
+.page-button{
+    width: 40px;
+    height: 40px;
 }
 
 /* THIS ZONE SORTED. YEET! */

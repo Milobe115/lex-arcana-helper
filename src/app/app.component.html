@@ -1,10 +1,19 @@
 <app-header></app-header>
 
 <div class="content" role="main">
-
-    <app-snowflake></app-snowflake>
-    <div class="main_spacer"></div>
-    <app-age-selector></app-age-selector>
-    <div class="main_spacer"></div>
-    <app-health-pietas></app-health-pietas>
+    <img class="page-button" src="assets/prev.svg" alt="Previous Page" (click)="onPrevClick()" *ngIf="view > 0"/>
+    <img class="page-button disabled" src="assets/prev.svg" alt="Previous Page" *ngIf="view < 1"/>
+    <div class="wrapper" *ngIf="view === 0">
+        <app-virtus-generator></app-virtus-generator>
+    </div>
+    <div class="wrapper" *ngIf="view === 1">
+        <app-snowflake></app-snowflake>
+        <div class="main_spacer"></div>
+        <app-age-selector></app-age-selector>
+    </div>
+    <div class="wrapper" *ngIf="view === 2">
+        <app-health-pietas></app-health-pietas>
+    </div>
+    <img class="page-button" src="assets/next.svg" alt="Next Page" (click)="onNextClick()" *ngIf="view < 2"/>
+    <img class="page-button disabled" src="assets/next.svg" alt="Next Page" *ngIf="view > 1"/>
 </div>

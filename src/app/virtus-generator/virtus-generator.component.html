@@ -1,0 +1,46 @@
+<div id="generator_wrapper">
+    <h1>Virtutes generation</h1>
+
+    <p style="font-size:20px"> Which method do you wish to use to generate virtutes?</p>
+
+    <div id="radio_wrapper">
+        <input type="radio" id="open" name="generation" value="open" checked (click)="switchToOpen()">
+        <label for="open">Openbox virtutes generation</label>
+
+        <input type="radio" id="random" name="generation" value="random" (click)="switchToRandom()">
+        <label for="random">Random virtutes generation</label>
+    </div>
+
+    <div id="virtus_wrapper">
+        <div class="virtus">
+            <div class="virtus_inner" *ngIf="randomMethod">{{this.coordinatio}}</div>
+            <input appDisableArrows id="coordinatio" type="number" class="i_stat" [(ngModel)]="coordinatio" *ngIf="!randomMethod"/>
+            <label>Coordinatio</label>
+        </div>
+        <div class="virtus">
+            <div class="virtus_inner" *ngIf="randomMethod">{{this.auctoritas}}</div>
+            <input appDisableArrows id="auctoritas" type="number" class="i_stat" [(ngModel)]="auctoritas" *ngIf="!randomMethod"/>
+            <label>Auctoritas</label>
+        </div>
+        <div class="virtus">
+            <div class="virtus_inner" *ngIf="randomMethod">{{this.ratio}}</div>
+            <input appDisableArrows id="ratio" type="number" class="i_stat" [(ngModel)]="ratio" *ngIf="!randomMethod"/>
+            <label>Ratio</label>
+        </div>
+        <div class="virtus">
+            <div class="virtus_inner" *ngIf="randomMethod">{{this.vigor}}</div>
+            <input appDisableArrows id="vigor" type="number" class="i_stat" [(ngModel)]="vigor" *ngIf="!randomMethod"/>
+            <label>Vigor</label>
+        </div>
+        <div class="virtus">
+            <div class="virtus_inner" *ngIf="randomMethod">{{this.ingenium}}</div>
+            <input appDisableArrows id="ingenium" type="number" class="i_stat" [(ngModel)]="ingenium" *ngIf="!randomMethod"/>
+            <label>Ingenium</label>
+        </div>
+        <div class="virtus">
+            <div class="virtus_inner" *ngIf="randomMethod">{{this.sensibilitas}}</div>
+            <input appDisableArrows id="sensibilitas" type="number" class="i_stat" [(ngModel)]="sensibilitas" *ngIf="!randomMethod"/>
+            <label>Sensibilitas</label>
+        </div>
+    </div>
+</div>

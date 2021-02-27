@@ -6,8 +6,8 @@
             <label for="iSN"></label>
         </td>
         <td colspan="2" class="t_virtus">
-            <input appDisableArrows id="iSensibilitas" name="iSensibilitas" type="number" class="i_stat" [(ngModel)]="virtus.sensibilitas" (blur)="onVirtusChange('sensibilitas' ,$event)"/>
-            <label for="iSensibilitas">Sensibilitas</label>
+            <div>{{this.virtus.sensibilitas}}</div>
+            <label>Sensibilitas</label>
         </td>
         <td colspan="2" class="t_inter">
             <input appDisableArrows id="iSM" type="number" class="i_stat" [(ngModel)]="sensibilitasMagia" (blur)="onInterChange('SM' ,$event)"/>
@@ -36,14 +36,14 @@
             <label for="iCC"></label>
         </td>
         <td colspan="2" class="t_virtus">
-            <input appDisableArrows id="iCoordinatio" name="iCoordinatio" type="number" class="i_stat" [(ngModel)]="virtus.coordinatio" (blur)="onVirtusChange('coordinatio' ,$event)"/>
-            <label for="iCoordinatio">Coordinatio</label>
+            <div>{{this.virtus.coordinatio}}</div>
+            <label>Coordinatio</label>
         </td>
         <td colspan="3" class="t_bonus"><div class="t_left">{{selectedProvince.natura}}</div></td>
         <td colspan="3" class="t_bonus"><div class="t_right">{{selectedProvince.magia}}</div></td>
         <td colspan="2" class="t_virtus">
-            <input appDisableArrows id="iIngenium" name="iIngenium" type="number" class="i_stat" [(ngModel)]="virtus.ingenium" (blur)="onVirtusChange('ingenium' ,$event)"/>
-            <label for="iIngenium">Ingenium</label>
+            <div>{{this.virtus.ingenium}}</div>
+            <label>Ingenium</label>
         </td>
         <td colspan="2" class="t_inter">
             <input appDisableArrows id="iISc" type="number" class="i_stat" [(ngModel)]="ingeniumScientia" (blur)="onInterChange('ISc' ,$event)"/>
@@ -70,14 +70,14 @@
             <label for="iVC"></label>
         </td>
         <td colspan="2" class="t_virtus">
-            <input appDisableArrows id="iVigor" name="iVigor" type="number" class="i_stat" [(ngModel)]="virtus.vigor" (blur)="onVirtusChange('vigor' ,$event)"/>
-            <label for="iVigor" class="t_small_virtus">Vigor</label>
+            <div>{{this.virtus.vigor}}</div>
+            <label class="t_small_virtus">Vigor</label>
         </td>
         <td colspan="3" class="t_bonus"><div class="t_left">{{selectedProvince.bello}}</div></td>
         <td colspan="3" class="t_bonus"><div class="t_right">{{selectedProvince.societate}}</div></td>
         <td colspan="2" class="t_virtus">
-            <input appDisableArrows id="iRatio" name="iRatio" type="number" class="i_stat" [(ngModel)]="virtus.ratio" (blur)="onVirtusChange('ratio' ,$event)"/>
-            <label for="iRatio" class="t_small_virtus">Ratio</label>
+            <div>{{this.virtus.ratio}}</div>
+            <label class="t_small_virtus">Ratio</label>
         </td>
         <td colspan="2" class="t_inter">
             <input appDisableArrows id="iRSc" type="number" class="i_stat" [(ngModel)]="ratioScientia" (blur)="onInterChange('RSc' ,$event)"/>
@@ -106,8 +106,8 @@
             <label for="iAB"></label>
         </td>
         <td colspan="2" class="t_virtus">
-            <input appDisableArrows id="iAuctoritas" name="iAuctoritas" type="number" class="i_stat" [(ngModel)]="virtus.auctoritas" (blur)="onVirtusChange('auctoritas' ,$event)"/>
-            <label for="iAuctoritas">Auctoritas</label>
+            <div>{{this.virtus.auctoritas}}</div>
+            <label>Auctoritas</label>
         </td>
         <td colspan="2" class="t_inter">
             <input appDisableArrows id="iASo" type="number" class="i_stat" [(ngModel)]="auctoritasSocietate" (blur)="onInterChange('ASo' ,$event)"/>

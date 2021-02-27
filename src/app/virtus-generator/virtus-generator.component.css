@@ -1,0 +1,54 @@
+#generator_wrapper{
+    text-align: center;
+    font-family: "Crimson Text", serif;
+    border: darkred 2px solid;
+}
+
+h1{
+    font-weight: normal;
+}
+
+.virtus{
+    margin: 10px;
+    width:75px;
+    height:75px;
+    border:2px darkgreen solid;
+    padding-bottom: 0;
+    background: white;
+    text-align: center;
+}
+
+.virtus_inner{
+    font-family: "Caveat", serif;
+    font-size: 24px;
+    width:75px;
+    margin: 10px 0;
+}
+
+#virtus_wrapper{
+    display: flex;
+}
+
+#radio_wrapper{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#virtus_wrapper label{
+    font-size: 14px;
+    padding: 5px;
+    width:75px !important;
+}
+
+.i_stat{
+    font-family: "Caveat", sans-serif;
+    width: 35px;
+    height:35px;
+    font-size: 30px;
+    -webkit-appearance: none;
+    text-align: center;
+    border: 5px;
+    margin: 5px;
+    color: darkblue;
+}

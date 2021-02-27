@@ -9,4 +9,13 @@ import {DEFAULT_PROVINCE, Province, PROVINCES} from './data/province';
 })
 
 export class AppComponent {
+    view = 0;
+
+    onPrevClick(): void{
+        this.view--;
+    }
+
+    onNextClick(): void{
+        this.view++;
+    }
 }

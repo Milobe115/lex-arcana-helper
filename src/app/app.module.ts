@@ -8,6 +8,7 @@ import { SnowflakeComponent } from './snowflake/snowflake.component';
 import { HeaderComponent } from './header/header.component';
 import { AgeSelectorComponent } from './age-selector/age-selector.component';
 import { HealthPietasComponent } from './health-pietas/health-pietas.component';
+import { VirtusGeneratorComponent } from './virtus-generator/virtus-generator.component';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { HealthPietasComponent } from './health-pietas/health-pietas.component';
         SnowflakeComponent,
         HeaderComponent,
         AgeSelectorComponent,
-        HealthPietasComponent
+        HealthPietasComponent,
+        VirtusGeneratorComponent
     ],
     imports: [
         BrowserModule,

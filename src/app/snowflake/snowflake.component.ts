@@ -46,6 +46,7 @@ export class SnowflakeComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        this.sharedDataService.currentAgeVirtus.subscribe(data => this.virtus = data);
     }
 
     recalculateAllPeritiae(): void {
@@ -115,30 +116,5 @@ export class SnowflakeComponent implements OnInit {
                 break;
         }
         this.recalculateAllPeritiae();
-    }
-
-    onVirtusChange(variableName: string, event: any): void {
-        switch (variableName) {
-            case 'sensibilitas':
-                this.virtus.sensibilitas = +event.target.value;
-                break;
-            case 'ingenium':
-                this.virtus.ingenium = +event.target.value;
-                break;
-            case 'ratio':
-                this.virtus.ratio = +event.target.value;
-                break;
-            case 'auctoritas':
-                this.virtus.auctoritas = +event.target.value;
-                break;
-            case 'vigor':
-                this.virtus.vigor = +event.target.value;
-                break;
-            case 'coordinatio':
-                this.virtus.coordinatio = +event.target.value;
-                break;
-        }
-        this.recalculateAllPeritiae();
-        this.sharedDataService.sendAgeVirtus(this.virtus);
     }
 }
